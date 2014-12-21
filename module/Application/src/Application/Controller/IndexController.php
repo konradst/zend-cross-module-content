@@ -11,11 +11,15 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Chart2\Form\Chart2Form;
 
 class IndexController extends AbstractActionController
 {
     public function indexAction()
-    {
-        return new ViewModel();
+    {        
+        $chart_form = new Chart2Form();
+        return new ViewModel(array(
+            'chart_form'=>$chart_form
+        ));
     }
 }
