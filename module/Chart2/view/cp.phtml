@@ -1,0 +1,9 @@
+<?php
+
+   $this->chart_form->setAttribute('action', $this->url('chart2', array('action' => 'draw')));
+   $this->chart_form->prepare();
+   echo $this->form()->openTag($this->chart_form);
+   echo $this->formCollection($this->chart_form);
+   echo $this->form()->closeTag();
+ 
+?>
