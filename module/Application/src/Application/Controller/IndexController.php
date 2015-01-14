@@ -16,8 +16,8 @@ use Chart2\Form\Chart2Form;
 class IndexController extends AbstractActionController
 {
     public function indexAction()
-    {        
-        $chart_form = new Chart2Form();
+    {
+        if(class_exists('Chart2\Form\Chart2Form')) $chart_form = new Chart2Form();
         return new ViewModel(array(
             'chart_form'=>$chart_form
         ));

@@ -3,7 +3,7 @@
 </div>
 
 <div class="row" style="margin: 10px;">
-    <a id="chart2_draw" href="<?php echo $this->url('chart2', array('action'=>'draw'));?>"><?= $this->translate('Click to draw a new chart') ?></a>
+    <?php if($chart_form): ?><a id="chart2_draw" href="<?php echo $this->url('chart2', array('action'=>'draw'));?>"><?= $this->translate('Click to draw a new chart') ?></a><?php endif; ?>
 </div>
 
 <div class="row" style="margin: 10px;">
@@ -11,8 +11,7 @@
 </div>
 
 <div class="row" style="margin: 10px;">
-    <?php echo $this->translate('The form below comes from the "Chart2" module') ?>
-    <?php echo $this->partial('cp.phtml', array('chart_form'=>$chart_form)); ?>
+    <?php if($chart_form) echo $this->partial('cp.phtml', array('chart_form'=>$chart_form)); ?>
 </div>
 
 <div id="chart2_area"></div>
