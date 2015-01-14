@@ -14,3 +14,7 @@ Installation
 Install just as you would install the skeleton application
 
 git clone https://github.com/konradst/zend-cross-module-content.git
+
+Demo
+----
+http://zend-cross-module-content.maximus.net.pl/
