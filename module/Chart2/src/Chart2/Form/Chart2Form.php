@@ -13,7 +13,7 @@ namespace Chart2\Form;
             'name' => 'type_radio',
             'type' => 'Radio',
             'options' => array(
-                'label' => 'The things from "Chart2" module (including this text) are neither loaded with JavaScript nor defined in the "Application" module. The "Application" Controller calls the definition of the Form that is located in the "Chart2" module. The "Application" index.phtml view calls the partial view that is also located in the "Chart2" module. The views, controllers, models and forms of both modules are independent of each other. Now try to comment out "Chart2" in application.config.php in line 11.',
+                'label' => 'The things from "Chart2" module (including this text) are neither loaded with JavaScript nor defined in the "Application" module. The "Application" Controller calls the definition of the Form that is located in the "Chart2" module. The "Application" index.phtml view calls the partial view that is also located in the "Chart2" module. The views, controllers, models and forms of both modules are independent of each other. You will see that when you comment out "Chart2" in application.config.php line 11.',
                 'value_options' => array(
                   'abs' => 'abs()',
                   'sin' => 'sin()',
